@@ -1,0 +1,17 @@
+{
+  "name": "@reboschedule/messages",
+  "version": "0.1.0",
+  "description": "Short messages of ReboSchedule to a phone, as your provider sends them: SMS and WhatsApp by Twilio, WhatsApp by Meta's Cloud API with the templates you had approved. Your keys; no SDK.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@reboschedule/core": "0.1.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

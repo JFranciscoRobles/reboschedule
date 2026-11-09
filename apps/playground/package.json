@@ -1,0 +1,17 @@
+{
+  "name": "@reboschedule/playground",
+  "version": "0.1.0",
+  "description": "The test application every package is tried in: booking as a visitor does it, the hours and the kinds of appointment, and what is booked, served by the real routes.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@reboschedule/core": "*",
+    "@reboschedule/react": "*",
+    "@reboschedule/server": "*"
+  }
+}

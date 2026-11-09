@@ -1,0 +1,22 @@
+{
+  "name": "@reboschedule/react",
+  "version": "0.1.0",
+  "description": "Booking for React: the widget a visitor books in (a month, its times, their details, the confirmation) and the editor of the hours and the kinds of appointment.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles.css"
+  },
+  "dependencies": {
+    "@reboschedule/core": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "react-dom": ">=19"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

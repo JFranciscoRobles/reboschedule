@@ -1,0 +1,41 @@
+{
+  "name": "reboschedule",
+  "version": "0.1.0",
+  "description": "Booking for the browser, with an engine of its own: the hours someone has, the kinds of appointment they give, the times still free in any time zone, and an appointment booked, sent as an invitation and kept by your application.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @reboschedule/playground",
+    "build": "npm run build -w @reboschedule/playground",
+    "site": "npm run dev -w @reboschedule/site",
+    "build:site": "npm run build -w @reboschedule/site",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage --coverage.include='packages/*/src/**'",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "build:packages": "npm run build -w @reboschedule/core -w @reboschedule/server -w @reboschedule/react",
+    "release": "npm run build:packages && node tools/release.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^5.0.5",
+    "happy-dom": "^21.0.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@reboschedule/calendars",
+  "version": "0.1.0",
+  "description": "What is busy in someone's own calendar, read as ReboSchedule takes it: a secret iCal address (Google, Outlook, Apple), Google Calendar's free/busy, Outlook's schedule. The app authorizes; this reads.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@reboschedule/core": "0.1.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

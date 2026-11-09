@@ -1,0 +1,14 @@
+{
+  "name": "@reboschedule/core",
+  "version": "0.1.0",
+  "description": "The engine: someone's hours and the kinds of appointment they give, the times still free in any time zone, an appointment checked, and its invitation (iCalendar). No DOM.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
